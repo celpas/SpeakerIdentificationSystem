@@ -1,0 +1,22 @@
+{
+    "pasqualecelella": {
+        "name": "Pasquale Celella",
+        "refs": [
+            "0000.wav"
+        ],
+        "evls": [],
+        "session_id": "9c52310997a9003ce37b09313f7b50b2d9780416ff1f08ff10b268c3e87e589a"
+    },
+    "brother2": {
+        "name": "Brother2",
+        "refs": [],
+        "evls": [],
+        "session_id": "3863d11c31bc691ce1c6f6dfde462bc408aed434c2fb3f00d4d3f764bc3adb7f"
+    },
+    "anonymous": {
+        "name": "Anonymous",
+        "refs": [],
+        "evls": [],
+        "session_id": "3863d11c31bc691ce1c6f6dfde462bc408aed434c2fb3f00d4d3f764bc3adb7f"
+    }
+}

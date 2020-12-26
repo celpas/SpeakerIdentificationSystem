@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block title %}Speaker Recognition System{% endblock %}
+
+
+{% block alert %}
+    {% if bad_name %}
+        <div class="alert alert-danger" role="alert">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+            The name inserted does not appear to be a valid name. Try again.
+        </div>
+    {% endif %}
+{% endblock %}
+
+
+{% block breadcrumb %}
+    <li class="breadcrumb-item active" aria-current="page">Login</li>
+{% endblock %}
+
+
+{% block content %}
+
+    <form action="{{ url_for('login') }}" method="post">
+        <div class="form-group">
+            <label for="name">Enter your full name:</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+{% endblock %}
